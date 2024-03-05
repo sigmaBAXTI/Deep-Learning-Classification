@@ -5,7 +5,7 @@ import plotly.express as ax
 import platform
 
 plt = platform.system()
-if plt == 'Linux': pathlib.WindowsPath = pathlib..PosixPath
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 # streamlit run .\app.py
 # title
 slt.title("Telefon, qushlar va bosh kiyimlarni kassifikatsiya qilib beradi")
