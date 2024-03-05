@@ -2,8 +2,10 @@ import streamlit as slt
 from fastai.vision.all import *
 import pathlib
 import plotly.express as ax
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+import platform
+
+plt = platform.system()
+if plt == 'Linux': pathlib.WindowsPath = pathlib..PosixPath
 # streamlit run .\app.py
 # title
 slt.title("Telefon, qushlar va bosh kiyimlarni kassifikatsiya qilib beradi")
